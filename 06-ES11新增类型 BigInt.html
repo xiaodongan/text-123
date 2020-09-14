@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let  num = 10n;
+  console.log(num);
+  console.log(typeof num);
+  let bigNum = Number.MAX_SAFE_INTEGER;
+  console.log(bigNum);
+  let num1 = bigNum + 1;
+  console.log(num1);
+  let num2 = bigNum + 2;
+  // let num4= bigNum + 3;
+  console.log(num2);
+  // console.log(num4);
+
+  let bigNum1 = BigInt(num1);
+  console.log(bigNum1);
+
+  let num3 = bigNum1 + BigInt(2);
+  console.log(num3);
+</script>
+</body>
+</html>

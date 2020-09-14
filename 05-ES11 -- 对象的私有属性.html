@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  class Preson{
+    name;
+    #age;
+    #weight;
+    constructor(name,age,weight){
+      this.name = name;
+      this.#age = age;
+      this.#weight = weight;
+    }
+    say(){
+      console.log(this.#age);
+      console.log(this.#weight);
+    }
+  }
+
+  let  girl = new Preson("小红",18,"60kg");
+  console.log(girl.name);
+  // console.log(girl.#age);
+  girl.say();
+
+
+</script>
+</body>
+</html>

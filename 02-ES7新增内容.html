@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    //数组的新增方法  includes 方法 判断数组中是否存在某个值
+    // Array.prototype.includes
+    // String.prototype.includes
+    let arr = ['吃','喝','玩','乐'];
+    let  boo = arr.includes("吃");
+    let  boo1 = arr.includes("赌");
+    console.log(boo);
+    console.log(boo1);
+
+    let  num = arr.indexOf("吃")
+    if(num == -1){
+      console.log(false);
+    }else{
+      console.log(true);
+    }
+
+    // 指数操作符 **  与Math.pow（） 方法效果一样
+    console.log(2 ** 3);
+
+
+  //  find()
+    let arr1 = [1,2,3,4,5];
+    let num1 = arr1.find((item)=>{
+      return item == 6;
+    });
+    console.log(num1);
+
+    // reduce()
+    // 回调函数中 第一个参数是每一次回调返回的结果，第二个参数是当前的数组项
+    let sum =  arr1.reduce((reValue,nItem)=>pItem + nItem,0)
+    console.log(sum);
+
+
+  </script>
+</body>
+</html>
